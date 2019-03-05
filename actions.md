@@ -361,11 +361,11 @@ These tools all link with libaktualizr, although they do not necessary use the A
 
 `aktualizr-cert-provider` assists with generating credentials and uploading them to a device for implicit provisioning.
 
-- [ ] Use file paths from config if provided
+- [x] Use file paths from config if provided (cert_provider_test.cc)
 - [ ] Use autoprovisioning credentials if fleet CA and private key are not provided
   - [x] Generate a random device ID (OTA-986, utils_test.cc, uptane_init_test.cc)
   - [x] Automatically provision (see above)
-- [x] Use fleet credentials if provided (run_certprovider_test.sh)
+- [x] Use fleet credentials if provided (cert_provider_test.cc)
   - [ ] Abort if fleet CA is provided without fleet private key
   - [ ] Abort if fleet private key is provided without fleet CA
   - [ ] Specify RSA bit length
